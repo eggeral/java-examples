@@ -11,6 +11,8 @@ public class Maps {
 
     public static void main(String[] args) {
 
+        // TODO .equals and hashCode!
+
         // default map
         Map<Integer, String> hashMap = new HashMap();
         hashMap.put(1, "test1");

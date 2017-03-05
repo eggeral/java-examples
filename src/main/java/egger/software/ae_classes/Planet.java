@@ -24,7 +24,7 @@ public enum Planet {
 
     private double mass;
 
-    private Planet(double mass) {
+    Planet(double mass) {
         this.mass = mass;
     }
 
