@@ -32,7 +32,7 @@ public class TestingForExceptions {
 
     @Test
     public void handleWithRule() {
-        List<String> list = new ArrayList<>();
+        List<String> list = new  ArrayList<>();
         //list.get(0); //lets the test fail
 
         thrown.expect(IndexOutOfBoundsException.class);

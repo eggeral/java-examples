@@ -7,7 +7,6 @@ public class Calculator {
     private int result;
 
     public Calculator(int a, int b) {
-        // 4. this
         this.a = a;
         this.b = b;
     }

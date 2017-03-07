@@ -1,5 +1,6 @@
 package egger.software.ao_examples;
 
+@SuppressWarnings("Duplicates")
 public class Position3d implements Position {
 
     private int x;

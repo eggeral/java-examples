@@ -12,7 +12,9 @@ public class Cell {
     }
 
     public void setLivingNeighbours(int livingNeighbours) {
+
         this.livingNeighbours = livingNeighbours;
+
     }
 
     public void calculateNextGeneration() {

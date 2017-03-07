@@ -2,6 +2,10 @@ package egger.software.ad_examples;
 
 public class Fibonacci {
 
+    // f(1) = 1
+    // f(2) = 1
+    // f(n) = f(n-2) + f(n-1)
+
     public static void main(String[] args) {
         System.out.println("== Fibonacci Recursive ==");
         System.out.println(fibonacciRecursive(0) + " -- expected: " + (-1L));

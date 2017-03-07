@@ -1,0 +1,2 @@
+* Network time server.
+* Network time server that gets the current time in a given time zone

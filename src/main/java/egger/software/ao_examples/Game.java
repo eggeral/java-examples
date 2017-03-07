@@ -2,6 +2,7 @@ package egger.software.ao_examples;
 
 import java.util.List;
 
+@SuppressWarnings("Duplicates")
 public class Game {
     private List<Cell> cells;
 

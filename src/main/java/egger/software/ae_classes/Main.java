@@ -1,8 +1,72 @@
 package egger.software.ae_classes;
 
 public class Main {
+/*
 
-    public static void main(String[] args) {
+            | Class | Package | Subclass | Subclass | World
+            |       |         |(same pkg)|(diff pkg)|
+————————————+———————+—————————+——————————+——————————+————————
+public      |   +   |    +    |    +     |     +    |   +
+————————————+———————+—————————+——————————+——————————+————————
+protected   |   +   |    +    |    +     |     +    |   o
+————————————+———————+—————————+——————————+——————————+————————
+no modifier |   +   |    +    |    +     |     o    |   o
+————————————+———————+—————————+——————————+——————————+————————
+private     |   +   |    o    |    o     |     o    |   o
+
++ : accessible
+o : not accessible
+
+*/
+
+    public static void main(String[] args) throws InterruptedException {
+        showAClass();
+        packageAndImport();
+        constructorFinalizer();
+        initializers();
+        staticNestedClasses();
+        nestedClasses();
+        localClasses();
+        interfaces();
+        anonymousClasses();
+        simpleEnum();
+        complexEnum();
+        simpleInheritance();
+        inheritance();
+        javaBeans();
+        showToString();
+    }
+
+    private static void showToString() {
+        class AClass {
+            int value;
+
+            @Override
+            public String toString() {
+                return "AClass{" +
+                        "value=" + value +
+                        '}';
+            }
+        }
+
+        AClass obj = new AClass();
+        System.out.println(obj.toString());
+        System.out.println(obj);
+    }
+
+    private static void javaBeans() {
+        JavaBean bean = new JavaBean();
+        bean.setExampleProperty(25);
+        System.out.println(bean.getExampleProperty());
+        bean.setBoolProperty(true);
+        System.out.println(bean.isBoolProperty());
+    }
+
+    public static void packageAndImport() {
+        System.out.println(PackageAndImport.absTest);
+    }
+
+    public static void simpleInheritance() {
         Rectangle rectangle = new Rectangle();
         rectangle.draw();
 
@@ -90,11 +154,11 @@ public class Main {
     }
 
     public static void nestedClasses() {
-        NestedClasses target1 = new NestedClasses("test1");
-        NestedClasses.NonStaticNestedClass nested1 = target1.new NonStaticNestedClass();
+        NestedClasses target = new NestedClasses("test1");
+        NestedClasses.NonStaticNestedClass nested1 = target.new NonStaticNestedClass();
         nested1.doSomething();
 
-        target1.showNonStaticUse();
+        target.showNonStaticUse();
     }
 
     public static void initializers() {

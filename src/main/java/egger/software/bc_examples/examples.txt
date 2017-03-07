@@ -1,4 +1,1 @@
-package egger.software.bc_examples.examples;
-
-public class txt {
-}
+Simple chat server. Clients connect to a server. Server forwards a message from one client to all other connected clients.

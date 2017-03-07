@@ -9,15 +9,10 @@ public class Statements {
 
         System.out.println("- if");
         if (strings.length == 0) {
-            System.out.println("arg please");
-            System.exit(1);
+            System.out.println("No strings");
+        } else {
+            System.out.println(strings.length + " strings");
         }
-
-        System.out.println("- if else");
-        if (strings[0].equals("a"))
-            System.out.println("a");
-        else
-            System.out.println("not a");
 
         System.out.println("- for");
         for (int i = 0; i < strings.length; i++) {
@@ -115,8 +110,8 @@ public class Statements {
         Integer test3 = 3;
 
         System.out.println("- var args");
-        printNumbers("hello1", 1,2,3,4);
-        printNumbers("hello2", new int[] {1,2,3,4});
+        printNumbers("hello1", 1, 2, 3, 4);
+        printNumbers("hello2", new int[]{1, 2, 3, 4});
 
 
     }

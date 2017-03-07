@@ -1,1 +1,1 @@
-TODO: Generic versions of Stack and LinkedList.
+// Generic versions of Stack and LinkedList.
